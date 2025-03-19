@@ -1,0 +1,12 @@
+release/parametersmanager.o
+release/main.o
+release/gcscontroller.o
+release/mavlinkconnection.o
+release/videoreceiver.o
+release/dronegcs_qmltyperegistrations.o
+release/qrc_qml.o
+release/qrc_resources.o
+release/moc_parametersmanager.o
+release/moc_gcscontroller.o
+release/moc_mavlinkconnection.o
+release/moc_videoreceiver.o

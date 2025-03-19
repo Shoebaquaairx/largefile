@@ -1,0 +1,634 @@
+{
+    "classes": [
+        {
+            "className": "GCSController",
+            "lineNumber": 8,
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "latitude",
+                    "notify": "latitudeChanged",
+                    "read": "latitude",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "longitude",
+                    "notify": "longitudeChanged",
+                    "read": "longitude",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "name": "altitude",
+                    "notify": "altitudeChanged",
+                    "read": "altitude",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "name": "relativeAltitude",
+                    "notify": "relativeAltitudeChanged",
+                    "read": "relativeAltitude",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 4,
+                    "name": "voltage",
+                    "notify": "voltageChanged",
+                    "read": "voltage",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 5,
+                    "name": "current",
+                    "notify": "currentChanged",
+                    "read": "current",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 6,
+                    "name": "batteryPercent",
+                    "notify": "batteryPercentChanged",
+                    "read": "batteryPercent",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 7,
+                    "name": "flightMode",
+                    "notify": "flightModeChanged",
+                    "read": "flightMode",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 8,
+                    "name": "isArmed",
+                    "notify": "armedStateChanged",
+                    "read": "isArmed",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 9,
+                    "name": "isConnected",
+                    "notify": "connectionStateChanged",
+                    "read": "isConnected",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 10,
+                    "name": "airSpeed",
+                    "notify": "airSpeedChanged",
+                    "read": "airSpeed",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 11,
+                    "name": "groundSpeed",
+                    "notify": "groundSpeedChanged",
+                    "read": "groundSpeed",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 12,
+                    "name": "heading",
+                    "notify": "headingChanged",
+                    "read": "heading",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 13,
+                    "name": "throttle",
+                    "notify": "throttleChanged",
+                    "read": "throttle",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 14,
+                    "name": "gpsFixType",
+                    "notify": "gpsFixTypeChanged",
+                    "read": "gpsFixType",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 15,
+                    "name": "satellites",
+                    "notify": "satellitesChanged",
+                    "read": "satellites",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 16,
+                    "name": "yaw",
+                    "notify": "yawChanged",
+                    "read": "yaw",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 17,
+                    "name": "roll",
+                    "notify": "rollChanged",
+                    "read": "roll",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 18,
+                    "name": "pitch",
+                    "notify": "pitchChanged",
+                    "read": "pitch",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 19,
+                    "name": "hdop",
+                    "notify": "hdopChanged",
+                    "read": "hdop",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 20,
+                    "name": "distanceFromHome",
+                    "notify": "distanceFromHomeChanged",
+                    "read": "distanceFromHome",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 21,
+                    "name": "landedState",
+                    "notify": "landedStateChanged",
+                    "read": "landedState",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "GCSController",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "latitude",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 0,
+                    "name": "latitudeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "longitude",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 1,
+                    "name": "longitudeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "altitude",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 2,
+                    "name": "altitudeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "relativeAltitude",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 3,
+                    "name": "relativeAltitudeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "voltage",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 4,
+                    "name": "voltageChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "current",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 5,
+                    "name": "currentChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "percent",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 6,
+                    "name": "batteryPercentChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mode",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 7,
+                    "name": "flightModeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "armed",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 8,
+                    "name": "armedStateChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "connected",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 9,
+                    "name": "connectionStateChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "airSpeed",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 10,
+                    "name": "airSpeedChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "groundSpeed",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 11,
+                    "name": "groundSpeedChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "yaw",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 12,
+                    "name": "yawChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "roll",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 13,
+                    "name": "rollChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "pitch",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 14,
+                    "name": "pitchChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "heading",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 15,
+                    "name": "headingChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "throttle",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 16,
+                    "name": "throttleChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "fixType",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 17,
+                    "name": "gpsFixTypeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "satellites",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 18,
+                    "name": "satellitesChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "hdop",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 19,
+                    "name": "hdopChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "distance",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 20,
+                    "name": "distanceFromHomeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "state",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 21,
+                    "name": "landedStateChanged",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "type",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "address",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "port",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 22,
+                    "name": "connectVehicle",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 23,
+                    "name": "disconnectVehicle",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mode",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 24,
+                    "name": "setFlightMode",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "gcscontroller.h",
+    "outputRevision": 68
+}

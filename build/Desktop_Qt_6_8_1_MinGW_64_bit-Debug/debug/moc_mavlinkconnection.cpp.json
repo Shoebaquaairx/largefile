@@ -1,0 +1,1138 @@
+{
+    "classes": [
+        {
+            "className": "MAVLinkConnection",
+            "enums": [
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "VehicleState",
+                    "values": [
+                        "VEHICLE_UNKNOWN",
+                        "VEHICLE_NOT_READY",
+                        "VEHICLE_READY",
+                        "VEHICLE_ARMED",
+                        "VEHICLE_FLYING",
+                        "VEHICLE_LANDING",
+                        "VEHICLE_LANDED"
+                    ]
+                }
+            ],
+            "lineNumber": 20,
+            "object": true,
+            "qualifiedClassName": "MAVLinkConnection",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "connected",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 0,
+                    "name": "connectionStatusChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "altitude",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 1,
+                    "name": "altitudeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "relativeAltitude",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 2,
+                    "name": "relativeAltitudeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "voltage",
+                            "type": "float"
+                        },
+                        {
+                            "name": "current",
+                            "type": "float"
+                        },
+                        {
+                            "name": "percentage",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 3,
+                    "name": "batteryChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "heartbeat",
+                            "type": "mavlink_heartbeat_t"
+                        }
+                    ],
+                    "index": 4,
+                    "name": "heartbeatReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "airspeed",
+                            "type": "float"
+                        },
+                        {
+                            "name": "groundspeed",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 5,
+                    "name": "speedUpdated",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "depth",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 6,
+                    "name": "depthChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "temperature",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 7,
+                    "name": "waterTemperatureChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "id",
+                            "type": "int"
+                        },
+                        {
+                            "name": "voltage",
+                            "type": "float"
+                        },
+                        {
+                            "name": "current",
+                            "type": "float"
+                        },
+                        {
+                            "name": "temperature",
+                            "type": "float"
+                        },
+                        {
+                            "name": "rpm",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 8,
+                    "name": "escDataChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "servoValues",
+                            "type": "QList<uint16_t>"
+                        }
+                    ],
+                    "index": 9,
+                    "name": "servoOutputChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "id",
+                            "type": "int"
+                        },
+                        {
+                            "name": "temperature",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 10,
+                    "name": "imuTemperatureChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "id",
+                            "type": "int"
+                        },
+                        {
+                            "name": "accel_x",
+                            "type": "float"
+                        },
+                        {
+                            "name": "accel_y",
+                            "type": "float"
+                        },
+                        {
+                            "name": "accel_z",
+                            "type": "float"
+                        },
+                        {
+                            "name": "gyro_x",
+                            "type": "float"
+                        },
+                        {
+                            "name": "gyro_y",
+                            "type": "float"
+                        },
+                        {
+                            "name": "gyro_z",
+                            "type": "float"
+                        },
+                        {
+                            "name": "mag_x",
+                            "type": "float"
+                        },
+                        {
+                            "name": "mag_y",
+                            "type": "float"
+                        },
+                        {
+                            "name": "mag_z",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 11,
+                    "name": "imuDataChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "abs_pressure",
+                            "type": "float"
+                        },
+                        {
+                            "name": "diff_pressure",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 12,
+                    "name": "pressureChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "distance",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 13,
+                    "name": "rangefinderDistanceChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "base_mode",
+                            "type": "uint8_t"
+                        },
+                        {
+                            "name": "custom_mode",
+                            "type": "uint32_t"
+                        }
+                    ],
+                    "index": 14,
+                    "name": "modeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "latitude",
+                            "type": "double"
+                        },
+                        {
+                            "name": "longitude",
+                            "type": "double"
+                        },
+                        {
+                            "name": "altitude",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 15,
+                    "name": "globalPositionReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "airspeed",
+                            "type": "float"
+                        },
+                        {
+                            "name": "groundspeed",
+                            "type": "float"
+                        },
+                        {
+                            "name": "heading",
+                            "type": "float"
+                        },
+                        {
+                            "name": "throttle",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 16,
+                    "name": "vfrHudReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "roll",
+                            "type": "float"
+                        },
+                        {
+                            "name": "pitch",
+                            "type": "float"
+                        },
+                        {
+                            "name": "yaw",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 17,
+                    "name": "attitudeReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "satellites",
+                            "type": "int"
+                        },
+                        {
+                            "name": "hdop",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 18,
+                    "name": "gpsRawReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "localRSSI",
+                            "type": "int"
+                        },
+                        {
+                            "name": "remoteRSSI",
+                            "type": "int"
+                        },
+                        {
+                            "name": "localNoise",
+                            "type": "int"
+                        },
+                        {
+                            "name": "remoteNoise",
+                            "type": "int"
+                        },
+                        {
+                            "name": "errorsFixed",
+                            "type": "int"
+                        },
+                        {
+                            "name": "txBuffer",
+                            "type": "int"
+                        },
+                        {
+                            "name": "rxError",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 19,
+                    "name": "signalDataChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "fix_type",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 20,
+                    "name": "gpsFixTypeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "lat",
+                            "type": "double"
+                        },
+                        {
+                            "name": "lon",
+                            "type": "double"
+                        },
+                        {
+                            "name": "alt",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 21,
+                    "name": "homePositionChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "distance",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 22,
+                    "name": "distanceFromHomeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "status",
+                            "type": "mavlink_sys_status_t"
+                        }
+                    ],
+                    "index": 23,
+                    "name": "systemStatusChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "quality",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 24,
+                    "name": "linkQualityChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "landed_state",
+                            "type": "uint8_t"
+                        }
+                    ],
+                    "index": 25,
+                    "name": "landedStateChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "vtol_state",
+                            "type": "uint8_t"
+                        },
+                        {
+                            "name": "landed_state",
+                            "type": "uint8_t"
+                        }
+                    ],
+                    "index": 26,
+                    "name": "extendedStateChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "severity",
+                            "type": "int"
+                        },
+                        {
+                            "name": "text",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 27,
+                    "name": "statusTextReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "text",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 28,
+                    "name": "notificationReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "text",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 29,
+                    "name": "errorReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "value",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 30,
+                    "name": "parameterReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 31,
+                    "name": "parametersComplete",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "latitude",
+                            "type": "double"
+                        },
+                        {
+                            "name": "longitude",
+                            "type": "double"
+                        },
+                        {
+                            "name": "altitude",
+                            "type": "float"
+                        },
+                        {
+                            "name": "fromVehicle",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 32,
+                    "name": "homePositionUpdated",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "type",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 33,
+                    "name": "vehicleTypeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 34,
+                    "name": "commandFailed",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 35,
+                    "name": "initializationStarted",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "armed",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 36,
+                    "name": "armingStateChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "state",
+                            "type": "VehicleState"
+                        }
+                    ],
+                    "index": 37,
+                    "name": "vehicleStateChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 38,
+                    "name": "preArmCheckFailed",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 39,
+                    "name": "preArmCheckPassed",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "healthy",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 40,
+                    "name": "sensorHealthChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "progress",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 41,
+                    "name": "missionUploadProgress",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "progress",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 42,
+                    "name": "missionDownloadProgress",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 43,
+                    "name": "missionTransferComplete",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "reason",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 44,
+                    "name": "missionTransferFailed",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "value",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 45,
+                    "name": "parameterSetSuccess",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 46,
+                    "name": "parameterSetFailed",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "step",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "completed",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 47,
+                    "name": "calibrationStep",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 48,
+                    "name": "calibrationMessage",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "progress",
+                            "type": "float"
+                        },
+                        {
+                            "name": "step",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 49,
+                    "name": "accelCalibrationProgress",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "position",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 50,
+                    "name": "accelCalibrationPositionRequired",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "state",
+                            "type": "int"
+                        },
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 51,
+                    "name": "accelCalibrationStatus",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 52,
+                    "name": "accelCalibrationComplete",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "progress0",
+                            "type": "float"
+                        },
+                        {
+                            "name": "progress1",
+                            "type": "float"
+                        },
+                        {
+                            "name": "progress2",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 53,
+                    "name": "compassCalibrationProgress",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "instruction",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 54,
+                    "name": "compassCalibrationStep",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "state",
+                            "type": "int"
+                        },
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 55,
+                    "name": "compassCalibrationStatus",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 56,
+                    "name": "compassCalibrationCompleted",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "progress",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 57,
+                    "name": "rcCalibrationProgress",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "state",
+                            "type": "int"
+                        },
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 58,
+                    "name": "rcCalibrationStatus",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "channel",
+                            "type": "int"
+                        },
+                        {
+                            "name": "value",
+                            "type": "int"
+                        },
+                        {
+                            "name": "min",
+                            "type": "int"
+                        },
+                        {
+                            "name": "max",
+                            "type": "int"
+                        },
+                        {
+                            "name": "trim",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 59,
+                    "name": "rcCalibrationChannelChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 60,
+                    "name": "rcCalibrationComplete",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "channel",
+                            "type": "int"
+                        },
+                        {
+                            "name": "value",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 61,
+                    "name": "rcRawChannelChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "progress",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 62,
+                    "name": "escCalibrationProgress",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "state",
+                            "type": "int"
+                        },
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 63,
+                    "name": "escCalibrationStatus",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "motorId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "value",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 64,
+                    "name": "escCalibrationMotorValue",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 65,
+                    "name": "escCalibrationComplete",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "private",
+                    "index": 66,
+                    "name": "handleTcpData",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 67,
+                    "name": "handleUdpData",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 68,
+                    "name": "handleSerialData",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 69,
+                    "name": "sendHeartbeat",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 70,
+                    "name": "checkConnectionHealth",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "error",
+                            "type": "QSerialPort::SerialPortError"
+                        }
+                    ],
+                    "index": 71,
+                    "name": "handleSerialError",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 72,
+                    "name": "setupHeartbeat",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 73,
+                    "name": "initializeStreamRates",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "type",
+                            "type": "ConnectionType"
+                        }
+                    ],
+                    "index": 74,
+                    "name": "setStreamRates",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 75,
+                    "name": "initializeVehicleConnection",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 76,
+                    "name": "resetSerialPort",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 77,
+                    "name": "attemptReconnection",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 78,
+                    "name": "handleCompassCalTimeout",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "msg",
+                            "type": "mavlink_message_t"
+                        }
+                    ],
+                    "index": 79,
+                    "name": "processCompassCalibrationStatus",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "mavlinkconnection.h",
+    "outputRevision": 68
+}

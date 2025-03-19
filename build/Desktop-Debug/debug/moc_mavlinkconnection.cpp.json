@@ -1,0 +1,312 @@
+{
+    "classes": [
+        {
+            "className": "MAVLinkConnection",
+            "lineNumber": 15,
+            "object": true,
+            "qualifiedClassName": "MAVLinkConnection",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "connected",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 0,
+                    "name": "connectionStatusChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "altitude",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 1,
+                    "name": "altitudeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "relativeAltitude",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 2,
+                    "name": "relativeAltitudeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "voltage",
+                            "type": "float"
+                        },
+                        {
+                            "name": "current",
+                            "type": "float"
+                        },
+                        {
+                            "name": "percentage",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 3,
+                    "name": "batteryChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "heartbeat",
+                            "type": "mavlink_heartbeat_t"
+                        }
+                    ],
+                    "index": 4,
+                    "name": "heartbeatReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "base_mode",
+                            "type": "uint8_t"
+                        },
+                        {
+                            "name": "custom_mode",
+                            "type": "uint32_t"
+                        }
+                    ],
+                    "index": 5,
+                    "name": "modeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "latitude",
+                            "type": "double"
+                        },
+                        {
+                            "name": "longitude",
+                            "type": "double"
+                        },
+                        {
+                            "name": "altitude",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 6,
+                    "name": "globalPositionReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "airspeed",
+                            "type": "float"
+                        },
+                        {
+                            "name": "groundspeed",
+                            "type": "float"
+                        },
+                        {
+                            "name": "heading",
+                            "type": "float"
+                        },
+                        {
+                            "name": "throttle",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 7,
+                    "name": "vfrHudReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "roll",
+                            "type": "float"
+                        },
+                        {
+                            "name": "pitch",
+                            "type": "float"
+                        },
+                        {
+                            "name": "yaw",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 8,
+                    "name": "attitudeReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "satellites",
+                            "type": "int"
+                        },
+                        {
+                            "name": "hdop",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 9,
+                    "name": "gpsRawReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "fix_type",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 10,
+                    "name": "gpsFixTypeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "lat",
+                            "type": "double"
+                        },
+                        {
+                            "name": "lon",
+                            "type": "double"
+                        },
+                        {
+                            "name": "alt",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 11,
+                    "name": "homePositionChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "distance",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 12,
+                    "name": "distanceFromHomeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "status",
+                            "type": "mavlink_sys_status_t"
+                        }
+                    ],
+                    "index": 13,
+                    "name": "systemStatusChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "quality",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 14,
+                    "name": "linkQualityChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "landed_state",
+                            "type": "uint8_t"
+                        }
+                    ],
+                    "index": 15,
+                    "name": "landedStateChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "vtol_state",
+                            "type": "uint8_t"
+                        },
+                        {
+                            "name": "landed_state",
+                            "type": "uint8_t"
+                        }
+                    ],
+                    "index": 16,
+                    "name": "extendedStateChanged",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "private",
+                    "index": 17,
+                    "name": "handleTcpData",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 18,
+                    "name": "handleUdpData",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 19,
+                    "name": "handleSerialData",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 20,
+                    "name": "sendHeartbeat",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 21,
+                    "name": "checkConnectionHealth",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "mavlinkconnection.h",
+    "outputRevision": 68
+}

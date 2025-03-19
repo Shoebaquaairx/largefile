@@ -1,0 +1,4 @@
+QML debugging is enabled. Only use this in a safe environment.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0000023b5c836600] stream 0, timescale not set
+[rtsp @ 0000023b5c836b80] max delay reached. need to consume packet
+[rtsp @ 0000023b5c836b80] RTP: missed 7 packets

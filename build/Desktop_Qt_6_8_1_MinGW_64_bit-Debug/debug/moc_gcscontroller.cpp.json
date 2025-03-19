@@ -1,0 +1,3148 @@
+{
+    "classes": [
+        {
+            "className": "GCSController",
+            "lineNumber": 20,
+            "methods": [
+                {
+                    "access": "public",
+                    "index": 175,
+                    "name": "startRecordingTime",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 176,
+                    "name": "stopRecordingTime",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 177,
+                    "name": "getRCChannelValues",
+                    "returnType": "QVariantList"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "latitude",
+                    "notify": "latitudeChanged",
+                    "read": "latitude",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "longitude",
+                    "notify": "longitudeChanged",
+                    "read": "longitude",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "name": "altitude",
+                    "notify": "altitudeChanged",
+                    "read": "altitude",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "name": "relativeAltitude",
+                    "notify": "relativeAltitudeChanged",
+                    "read": "relativeAltitude",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 4,
+                    "name": "voltage",
+                    "notify": "voltageChanged",
+                    "read": "voltage",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 5,
+                    "name": "current",
+                    "notify": "currentChanged",
+                    "read": "current",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 6,
+                    "name": "batteryPercent",
+                    "notify": "batteryPercentChanged",
+                    "read": "batteryPercent",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 7,
+                    "name": "flightMode",
+                    "notify": "flightModeChanged",
+                    "read": "flightMode",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 8,
+                    "name": "isArmed",
+                    "notify": "armedStateChanged",
+                    "read": "isArmed",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 9,
+                    "name": "isConnected",
+                    "notify": "connectionStateChanged",
+                    "read": "isConnected",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 10,
+                    "name": "airSpeed",
+                    "notify": "airSpeedChanged",
+                    "read": "airSpeed",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 11,
+                    "name": "localRSSI",
+                    "notify": "localRSSIChanged",
+                    "read": "localRSSI",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 12,
+                    "name": "remoteRSSI",
+                    "notify": "remoteRSSIChanged",
+                    "read": "remoteRSSI",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 13,
+                    "name": "localNoise",
+                    "notify": "localNoiseChanged",
+                    "read": "localNoise",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 14,
+                    "name": "remoteNoise",
+                    "notify": "remoteNoiseChanged",
+                    "read": "remoteNoise",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 15,
+                    "name": "errorsFixed",
+                    "notify": "errorsFixedChanged",
+                    "read": "errorsFixed",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 16,
+                    "name": "txBuffer",
+                    "notify": "txBufferChanged",
+                    "read": "txBuffer",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 17,
+                    "name": "rxError",
+                    "notify": "rxErrorChanged",
+                    "read": "rxError",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 18,
+                    "name": "servoOutputValues",
+                    "notify": "servoOutputChanged",
+                    "read": "getServoOutputValues",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 19,
+                    "name": "depth",
+                    "notify": "depthChanged",
+                    "read": "depth",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "float",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 20,
+                    "name": "waterTemperature",
+                    "notify": "waterTemperatureChanged",
+                    "read": "waterTemperature",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "float",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 21,
+                    "name": "rangefinderDistance",
+                    "notify": "rangefinderDistanceChanged",
+                    "read": "rangefinderDistance",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "float",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 22,
+                    "name": "pressureAbs",
+                    "notify": "pressureChanged",
+                    "read": "pressureAbs",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "float",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 23,
+                    "name": "pressureDiff",
+                    "notify": "pressureChanged",
+                    "read": "pressureDiff",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "float",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 24,
+                    "name": "escData",
+                    "notify": "escDataChanged",
+                    "read": "getESCData",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 25,
+                    "name": "imuTemperatures",
+                    "notify": "imuTemperaturesChanged",
+                    "read": "getIMUTemperatures",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 26,
+                    "name": "groundSpeed",
+                    "notify": "groundSpeedChanged",
+                    "read": "groundSpeed",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 27,
+                    "name": "heading",
+                    "notify": "headingChanged",
+                    "read": "heading",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 28,
+                    "name": "throttle",
+                    "notify": "throttleChanged",
+                    "read": "throttle",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 29,
+                    "name": "gpsFixType",
+                    "notify": "gpsFixTypeChanged",
+                    "read": "gpsFixType",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 30,
+                    "name": "satellites",
+                    "notify": "satellitesChanged",
+                    "read": "satellites",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 31,
+                    "name": "yaw",
+                    "notify": "yawChanged",
+                    "read": "yaw",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 32,
+                    "name": "roll",
+                    "notify": "rollChanged",
+                    "read": "roll",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 33,
+                    "name": "pitch",
+                    "notify": "pitchChanged",
+                    "read": "pitch",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 34,
+                    "name": "hdop",
+                    "notify": "hdopChanged",
+                    "read": "hdop",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 35,
+                    "name": "distanceFromHome",
+                    "notify": "distanceFromHomeChanged",
+                    "read": "distanceFromHome",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 36,
+                    "name": "landedState",
+                    "notify": "landedStateChanged",
+                    "read": "landedState",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 37,
+                    "name": "notifications",
+                    "notify": "notificationsChanged",
+                    "read": "notifications",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QStringList",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 38,
+                    "name": "errors",
+                    "notify": "errorsChanged",
+                    "read": "errors",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QStringList",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 39,
+                    "name": "homeLatitude",
+                    "notify": "homePositionChanged",
+                    "read": "homeLatitude",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 40,
+                    "name": "homeLongitude",
+                    "notify": "homePositionChanged",
+                    "read": "homeLongitude",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 41,
+                    "name": "homeAltitude",
+                    "notify": "homePositionChanged",
+                    "read": "homeAltitude",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 42,
+                    "name": "vehicleType",
+                    "notify": "vehicleTypeChanged",
+                    "read": "vehicleType",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 43,
+                    "name": "isArmed",
+                    "notify": "armedStateChanged",
+                    "read": "isArmed",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 44,
+                    "name": "vehicleState",
+                    "notify": "vehicleStateChanged",
+                    "read": "vehicleState",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 45,
+                    "name": "preArmChecks",
+                    "notify": "preArmChecksChanged",
+                    "read": "preArmChecks",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QStringList",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 46,
+                    "name": "sensorsHealthy",
+                    "notify": "sensorsHealthyChanged",
+                    "read": "sensorsHealthy",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 47,
+                    "name": "missionProgress",
+                    "notify": "missionProgressChanged",
+                    "read": "missionProgress",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "float",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 48,
+                    "name": "missionUploadInProgress",
+                    "notify": "missionProgressChanged",
+                    "read": "isMissionUploadInProgress",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 49,
+                    "name": "hasModifiedParameters",
+                    "notify": "parametersChanged",
+                    "read": "hasModifiedParameters",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 50,
+                    "name": "parameterProgress",
+                    "notify": "parameterProgressChanged",
+                    "read": "parameterProgress",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "float",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 51,
+                    "name": "accelCalibrating",
+                    "notify": "accelCalibratingChanged",
+                    "read": "isAccelCalibrating",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 52,
+                    "name": "accelCalibrationProgress",
+                    "notify": "accelCalibrationProgressChanged",
+                    "read": "accelCalibrationProgress",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "float",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 53,
+                    "name": "accelCalibrationStep",
+                    "notify": "accelCalibrationStepChanged",
+                    "read": "accelCalibrationStep",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 54,
+                    "name": "accelCalibrationStatus",
+                    "notify": "accelCalibrationStatusChanged",
+                    "read": "accelCalibrationStatus",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 55,
+                    "name": "positionConfirmed",
+                    "notify": "accelCalibrationPositionChanged",
+                    "read": "getPositionConfirmed",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 56,
+                    "name": "compassCalibrating",
+                    "notify": "compassCalibratingChanged",
+                    "read": "isCompassCalibrating",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 57,
+                    "name": "compassCalibrationProgress",
+                    "notify": "compassCalibrationProgressChanged",
+                    "read": "compassCalibrationProgress",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 58,
+                    "name": "compassCalibrationStatus",
+                    "notify": "compassCalibrationStatusChanged",
+                    "read": "compassCalibrationStatus",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 59,
+                    "name": "rcCalibrating",
+                    "notify": "rcCalibratingChanged",
+                    "read": "isRCCalibrating",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 60,
+                    "name": "rcCalibrationProgress",
+                    "notify": "rcCalibrationProgressChanged",
+                    "read": "rcCalibrationProgress",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "float",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 61,
+                    "name": "rcCalibrationStatus",
+                    "notify": "rcCalibrationStatusChanged",
+                    "read": "rcCalibrationStatus",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 62,
+                    "name": "rcChannelValues",
+                    "notify": "rcChannelsChanged",
+                    "read": "getRCChannelValues",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 63,
+                    "name": "isRCDataAvailable",
+                    "notify": "rcChannelsChanged",
+                    "read": "isRCDataAvailable",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 64,
+                    "name": "escCalibrating",
+                    "notify": "escCalibratingChanged",
+                    "read": "isESCCalibrating",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 65,
+                    "name": "escCalibrationProgress",
+                    "notify": "escCalibrationProgressChanged",
+                    "read": "escCalibrationProgress",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "float",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 66,
+                    "name": "escCalibrationStatus",
+                    "notify": "escCalibrationStatusChanged",
+                    "read": "escCalibrationStatus",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 67,
+                    "name": "escMotorValues",
+                    "notify": "escMotorValuesChanged",
+                    "read": "getESCMotorValues",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 68,
+                    "name": "currentMode",
+                    "notify": "modeChanged",
+                    "read": "getRecordingMode",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 69,
+                    "name": "captureMode",
+                    "notify": "captureModeChanged",
+                    "read": "getCaptureMode",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 70,
+                    "name": "formattedTime",
+                    "notify": "recordingTimeChanged",
+                    "read": "getFormattedTime",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 71,
+                    "name": "startTime",
+                    "notify": "recordingTimeChanged",
+                    "read": "getStartTime",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 72,
+                    "name": "endTime",
+                    "notify": "recordingTimeChanged",
+                    "read": "getEndTime",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "GCSController",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "recordingTimeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 1,
+                    "name": "errorMessage",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "name": "recordingFailed",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "name": "recording_already_started",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "state",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 4,
+                    "name": "b2_unable_disable",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "state",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 5,
+                    "name": "b1_unable_disable",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "latitude",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 6,
+                    "name": "latitudeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "longitude",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 7,
+                    "name": "longitudeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "altitude",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 8,
+                    "name": "altitudeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "relativeAltitude",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 9,
+                    "name": "relativeAltitudeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "voltage",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 10,
+                    "name": "voltageChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "current",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 11,
+                    "name": "currentChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "percent",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 12,
+                    "name": "batteryPercentChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mode",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 13,
+                    "name": "flightModeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "armed",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 14,
+                    "name": "armedStateChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "connected",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 15,
+                    "name": "connectionStateChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "airSpeed",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 16,
+                    "name": "airSpeedChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "groundSpeed",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 17,
+                    "name": "groundSpeedChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "yaw",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 18,
+                    "name": "yawChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "roll",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 19,
+                    "name": "rollChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "pitch",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 20,
+                    "name": "pitchChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "heading",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 21,
+                    "name": "headingChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "throttle",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 22,
+                    "name": "throttleChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "fixType",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 23,
+                    "name": "gpsFixTypeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "satellites",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 24,
+                    "name": "satellitesChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "hdop",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 25,
+                    "name": "hdopChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "values",
+                            "type": "QVariantList"
+                        }
+                    ],
+                    "index": 26,
+                    "name": "servoOutputChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "depth",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 27,
+                    "name": "depthChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "temp",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 28,
+                    "name": "waterTemperatureChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "distance",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 29,
+                    "name": "rangefinderDistanceChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 30,
+                    "name": "escDataChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 31,
+                    "name": "imuTemperaturesChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "abs_pressure",
+                            "type": "float"
+                        },
+                        {
+                            "name": "diff_pressure",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 32,
+                    "name": "pressureChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "motorNumber",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 33,
+                    "name": "sequenceMotorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "distance",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 34,
+                    "name": "distanceFromHomeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "state",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 35,
+                    "name": "landedStateChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 36,
+                    "name": "notificationsChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 37,
+                    "name": "errorsChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "value",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 38,
+                    "name": "parameterValueChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "base_mode",
+                            "type": "uint8_t"
+                        },
+                        {
+                            "name": "custom_mode",
+                            "type": "uint32_t"
+                        },
+                        {
+                            "name": "vehicle_type",
+                            "type": "uint8_t"
+                        }
+                    ],
+                    "index": 39,
+                    "name": "modeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "lat",
+                            "type": "double"
+                        },
+                        {
+                            "name": "lon",
+                            "type": "double"
+                        },
+                        {
+                            "name": "alt",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 40,
+                    "name": "homePositionChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "type",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 41,
+                    "name": "vehicleTypeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "state",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 42,
+                    "name": "vehicleStateChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 43,
+                    "name": "preArmChecksChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "healthy",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 44,
+                    "name": "sensorsHealthyChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "progress",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 45,
+                    "name": "missionProgressChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 46,
+                    "name": "missionTransferCompleted",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "reason",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 47,
+                    "name": "missionTransferFailed",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 48,
+                    "name": "missionUpdated",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 49,
+                    "name": "parametersChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "savedCount",
+                            "type": "int"
+                        },
+                        {
+                            "name": "failedCount",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 50,
+                    "name": "parameterSaveResult",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "percentage",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 51,
+                    "name": "parameterLoadProgress",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "progress",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 52,
+                    "name": "parameterProgressChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "rssi",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 53,
+                    "name": "localRSSIChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "rssi",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 54,
+                    "name": "remoteRSSIChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "noise",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 55,
+                    "name": "localNoiseChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "noise",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 56,
+                    "name": "remoteNoiseChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "count",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 57,
+                    "name": "errorsFixedChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "size",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 58,
+                    "name": "txBufferChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "count",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 59,
+                    "name": "rxErrorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "calibrating",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 60,
+                    "name": "accelCalibratingChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "progress",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 61,
+                    "name": "accelCalibrationProgressChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "step",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 62,
+                    "name": "accelCalibrationStepChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "status",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 63,
+                    "name": "accelCalibrationStatusChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "position",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 64,
+                    "name": "accelCalibrationPositionChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 65,
+                    "name": "accelCalibrationComplete",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "calibrating",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 66,
+                    "name": "compassCalibratingChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "progress",
+                            "type": "QVariantList"
+                        }
+                    ],
+                    "index": 67,
+                    "name": "compassCalibrationProgressChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "status",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 68,
+                    "name": "compassCalibrationStatusChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "step",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 69,
+                    "name": "compassCalibrationStepChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 70,
+                    "name": "compassCalibrationComplete",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "calibrating",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 71,
+                    "name": "rcCalibratingChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "progress",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 72,
+                    "name": "rcCalibrationProgressChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "status",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 73,
+                    "name": "rcCalibrationStatusChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "channel",
+                            "type": "int"
+                        },
+                        {
+                            "name": "value",
+                            "type": "int"
+                        },
+                        {
+                            "name": "min",
+                            "type": "int"
+                        },
+                        {
+                            "name": "max",
+                            "type": "int"
+                        },
+                        {
+                            "name": "trim",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 74,
+                    "name": "rcCalibrationChannelChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 75,
+                    "name": "rcCalibrationComplete",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 76,
+                    "name": "rcChannelsChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "channel",
+                            "type": "int"
+                        },
+                        {
+                            "name": "value",
+                            "type": "int"
+                        },
+                        {
+                            "name": "min",
+                            "type": "int"
+                        },
+                        {
+                            "name": "max",
+                            "type": "int"
+                        },
+                        {
+                            "name": "trim",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 77,
+                    "name": "rcChannelUpdated",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "calibrating",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 78,
+                    "name": "escCalibratingChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "progress",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 79,
+                    "name": "escCalibrationProgressChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "status",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 80,
+                    "name": "escCalibrationStatusChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "motorId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "value",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 81,
+                    "name": "escCalibrationMotorValue",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 82,
+                    "name": "escCalibrationComplete",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 83,
+                    "name": "escMotorValuesChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 84,
+                    "name": "motorTestComplete",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 85,
+                    "name": "modeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 86,
+                    "name": "captureModeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "text",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 87,
+                    "name": "textReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 88,
+                    "name": "capture_mode_changed",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "type",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "address",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "port",
+                            "type": "int"
+                        },
+                        {
+                            "name": "baudRate",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 89,
+                    "name": "connectVehicle",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "type",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "address",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "port",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 90,
+                    "isCloned": true,
+                    "name": "connectVehicle",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 91,
+                    "name": "disconnectVehicle",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mode",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 92,
+                    "name": "setFlightMode",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 93,
+                    "name": "getAvailableSerialPorts",
+                    "returnType": "QStringList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "portName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "baudRate",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 94,
+                    "name": "connectSerialPort",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 95,
+                    "name": "armVehicle",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 96,
+                    "name": "disarmVehicle",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 97,
+                    "name": "openFolderDialog",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mode",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 98,
+                    "name": "setRecordingMode",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mode",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "sec",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 99,
+                    "name": "capture_auto",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 100,
+                    "name": "getRecordingMode",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 101,
+                    "name": "getCaptureMode",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 102,
+                    "name": "getESCData",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "index": 103,
+                    "name": "getIMUTemperatures",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "index": 104,
+                    "name": "getServoOutputValues",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mode",
+                            "type": "QString&"
+                        }
+                    ],
+                    "index": 105,
+                    "name": "modes",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "rtspLink",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "filePath",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "filename",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 106,
+                    "name": "startRecording",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 107,
+                    "name": "stopRecording",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "rtspLink",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "filePath",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "filename",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 108,
+                    "name": "capture_image",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 109,
+                    "name": "button_1_clicked",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 110,
+                    "name": "button_2_clicked",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "status",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 111,
+                    "name": "setDroneStatus",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "altitude",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 112,
+                    "name": "takeoff",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 113,
+                    "name": "land",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 114,
+                    "name": "returnToLaunch",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "lat",
+                            "type": "double"
+                        },
+                        {
+                            "name": "lon",
+                            "type": "double"
+                        },
+                        {
+                            "name": "alt",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 115,
+                    "name": "setHomePosition",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "lat",
+                            "type": "double"
+                        },
+                        {
+                            "name": "lon",
+                            "type": "double"
+                        },
+                        {
+                            "name": "alt",
+                            "type": "float"
+                        },
+                        {
+                            "name": "yaw",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 116,
+                    "name": "repositionVehicle",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "lat",
+                            "type": "double"
+                        },
+                        {
+                            "name": "lon",
+                            "type": "double"
+                        },
+                        {
+                            "name": "alt",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 117,
+                    "isCloned": true,
+                    "name": "repositionVehicle",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 118,
+                    "name": "writeMissionToVehicle",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 119,
+                    "name": "readMissionFromVehicle",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 120,
+                    "name": "clearMission",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "filename",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 121,
+                    "name": "saveMission",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "filename",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 122,
+                    "name": "loadMission",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "lat",
+                            "type": "double"
+                        },
+                        {
+                            "name": "lon",
+                            "type": "double"
+                        },
+                        {
+                            "name": "alt",
+                            "type": "float"
+                        },
+                        {
+                            "name": "command",
+                            "type": "int"
+                        },
+                        {
+                            "name": "frame",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 123,
+                    "name": "addMissionItem",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "lat",
+                            "type": "double"
+                        },
+                        {
+                            "name": "lon",
+                            "type": "double"
+                        },
+                        {
+                            "name": "alt",
+                            "type": "float"
+                        },
+                        {
+                            "name": "command",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 124,
+                    "isCloned": true,
+                    "name": "addMissionItem",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "index",
+                            "type": "int"
+                        },
+                        {
+                            "name": "lat",
+                            "type": "double"
+                        },
+                        {
+                            "name": "lon",
+                            "type": "double"
+                        },
+                        {
+                            "name": "alt",
+                            "type": "float"
+                        },
+                        {
+                            "name": "command",
+                            "type": "int"
+                        },
+                        {
+                            "name": "param1",
+                            "type": "float"
+                        },
+                        {
+                            "name": "param2",
+                            "type": "float"
+                        },
+                        {
+                            "name": "param3",
+                            "type": "float"
+                        },
+                        {
+                            "name": "param4",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 125,
+                    "name": "updateMissionItem",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "index",
+                            "type": "int"
+                        },
+                        {
+                            "name": "lat",
+                            "type": "double"
+                        },
+                        {
+                            "name": "lon",
+                            "type": "double"
+                        },
+                        {
+                            "name": "alt",
+                            "type": "float"
+                        },
+                        {
+                            "name": "command",
+                            "type": "int"
+                        },
+                        {
+                            "name": "param1",
+                            "type": "float"
+                        },
+                        {
+                            "name": "param2",
+                            "type": "float"
+                        },
+                        {
+                            "name": "param3",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 126,
+                    "isCloned": true,
+                    "name": "updateMissionItem",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "index",
+                            "type": "int"
+                        },
+                        {
+                            "name": "lat",
+                            "type": "double"
+                        },
+                        {
+                            "name": "lon",
+                            "type": "double"
+                        },
+                        {
+                            "name": "alt",
+                            "type": "float"
+                        },
+                        {
+                            "name": "command",
+                            "type": "int"
+                        },
+                        {
+                            "name": "param1",
+                            "type": "float"
+                        },
+                        {
+                            "name": "param2",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 127,
+                    "isCloned": true,
+                    "name": "updateMissionItem",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "index",
+                            "type": "int"
+                        },
+                        {
+                            "name": "lat",
+                            "type": "double"
+                        },
+                        {
+                            "name": "lon",
+                            "type": "double"
+                        },
+                        {
+                            "name": "alt",
+                            "type": "float"
+                        },
+                        {
+                            "name": "command",
+                            "type": "int"
+                        },
+                        {
+                            "name": "param1",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 128,
+                    "isCloned": true,
+                    "name": "updateMissionItem",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "index",
+                            "type": "int"
+                        },
+                        {
+                            "name": "lat",
+                            "type": "double"
+                        },
+                        {
+                            "name": "lon",
+                            "type": "double"
+                        },
+                        {
+                            "name": "alt",
+                            "type": "float"
+                        },
+                        {
+                            "name": "command",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 129,
+                    "isCloned": true,
+                    "name": "updateMissionItem",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "index",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 130,
+                    "name": "removeMissionItem",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 131,
+                    "name": "getMissionItems",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "items",
+                            "type": "QVariantList"
+                        }
+                    ],
+                    "index": 132,
+                    "name": "createMissionItems",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 133,
+                    "name": "getParameterGroups",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "group",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 134,
+                    "name": "getParametersByGroup",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "value",
+                            "type": "QVariant"
+                        }
+                    ],
+                    "index": 135,
+                    "name": "setParameterValue",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 136,
+                    "name": "saveAllParameters",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 137,
+                    "name": "getParameterDescription",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 138,
+                    "name": "getParameterUnits",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 139,
+                    "name": "getParameterDefault",
+                    "returnType": "QVariant"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 140,
+                    "name": "getParameterOptions",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "defaultValue",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 141,
+                    "name": "getParameterValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 142,
+                    "isCloned": true,
+                    "name": "getParameterValue",
+                    "returnType": "float"
+                },
+                {
+                    "access": "public",
+                    "index": 143,
+                    "name": "refreshParameters",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 144,
+                    "name": "hasModifiedParameters",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 145,
+                    "name": "cancelParameterRequest",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 146,
+                    "name": "startAccelCalibration",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 147,
+                    "name": "startLevelCalibration",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 148,
+                    "name": "startSimpleCalibration",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 149,
+                    "name": "cancelAccelCalibration",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 150,
+                    "name": "confirmAccelCalibrationPosition",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 151,
+                    "name": "startCompassCalibration",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 152,
+                    "name": "cancelCompassCalibration",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 153,
+                    "name": "retryCompassCalibration",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 154,
+                    "name": "rebootVehicle",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 155,
+                    "name": "startRCCalibration",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 156,
+                    "name": "cancelRCCalibration",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 157,
+                    "name": "saveRCCalibration",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "channel",
+                            "type": "int"
+                        },
+                        {
+                            "name": "reversed",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 158,
+                    "name": "setRCReversed",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 159,
+                    "name": "getRCCalibrationData",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "index": 160,
+                    "name": "startESCCalibration",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 161,
+                    "name": "cancelESCCalibration",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 162,
+                    "name": "saveESCCalibration",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "passed",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 163,
+                    "name": "setESCSafetyChecks",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 164,
+                    "name": "getESCCalibrationData",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "motorNumber",
+                            "type": "int"
+                        },
+                        {
+                            "name": "throttlePercent",
+                            "type": "int"
+                        },
+                        {
+                            "name": "durationSec",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 165,
+                    "name": "testMotor",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "throttlePercent",
+                            "type": "int"
+                        },
+                        {
+                            "name": "durationSec",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 166,
+                    "name": "testAllMotors",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "throttlePercent",
+                            "type": "int"
+                        },
+                        {
+                            "name": "durationSec",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 167,
+                    "name": "testMotorsInSequence",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 168,
+                    "name": "stopAllMotors",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "value",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 169,
+                    "name": "setMotorSpinArm",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 170,
+                    "isCloned": true,
+                    "name": "setMotorSpinArm",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "value",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 171,
+                    "name": "setMotorSpinMin",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 172,
+                    "isCloned": true,
+                    "name": "setMotorSpinMin",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "text",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 173,
+                    "name": "textPasted",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "servoValues",
+                            "type": "QList<uint16_t>"
+                        }
+                    ],
+                    "index": 174,
+                    "name": "handleServoOutputChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "gcscontroller.h",
+    "outputRevision": 68
+}

@@ -1,0 +1,138 @@
+{
+    "classes": [
+        {
+            "className": "ParametersManager",
+            "lineNumber": 12,
+            "methods": [
+                {
+                    "access": "public",
+                    "index": 8,
+                    "name": "cancelParameterRequests",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "ParametersManager",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "value",
+                            "type": "QVariant"
+                        }
+                    ],
+                    "index": 0,
+                    "name": "parameterReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "percentComplete",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 1,
+                    "name": "parameterListProgress",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "name": "parameterListComplete",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 3,
+                    "name": "parameterUpdateResult",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "successCount",
+                            "type": "int"
+                        },
+                        {
+                            "name": "failCount",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 4,
+                    "name": "parameterSaveComplete",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "value",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 5,
+                    "name": "parameterUpdated",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "value",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 6,
+                    "name": "onParameterReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 7,
+                    "name": "onParametersComplete",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "parametersmanager.h",
+    "outputRevision": 68
+}

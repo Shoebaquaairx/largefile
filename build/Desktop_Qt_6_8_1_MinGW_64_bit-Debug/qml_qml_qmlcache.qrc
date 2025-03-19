@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<RCC>
+    <qresource prefix="/">
+        <file alias="main.qml">../../qml/main.qml</file>
+        <file alias="components/TelemetryWindow.qml">../../qml/components/TelemetryWindow.qml</file>
+        <file alias="components/SonarWindow.qml">../../qml/components/SonarWindow.qml</file>
+        <file alias="qmldir">../../qml/qmldir</file>
+        <file alias="components/TopBar.qml">../../qml/components/TopBar.qml</file>
+        <file alias="components/MapView.qml">../../qml/components/MapView.qml</file>
+        <file alias="components/SettingView.qml">../../qml/components/SettingView.qml</file>
+        <file alias="components/PlanView.qml">../../qml/components/PlanView.qml</file>
+        <file alias="components/TelemetryPanel.qml">../../qml/components/TelemetryPanel.qml</file>
+        <file alias="components/CameraView.qml">../../qml/components/CameraView.qml</file>
+        <file alias="components/SonarView.qml">../../qml/components/SonarView.qml</file>
+        <file alias="components/FunctionButtons.qml">../../qml/components/FunctionButtons.qml</file>
+        <file alias="components/PlanFlyToggle.qml">../../qml/components/PlanFlyToggle.qml</file>
+        <file alias="components/ArtificialHorizon.qml">../../qml/components/ArtificialHorizon.qml</file>
+        <file alias="components/CustomControls/GCSButton.qml">../../qml/components/CustomControls/GCSButton.qml</file>
+        <file alias="components/CustomControls/StatusIndicator.qml">../../qml/components/CustomControls/StatusIndicator.qml</file>
+        <file alias="components/SonarVideoPlayer.qml">../../qml/components/SonarVideoPlayer.qml</file>
+        <file alias="components/Camerawindow.qml">../../qml/components/Camerawindow.qml</file>
+    </qresource>
+</RCC>
